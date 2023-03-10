@@ -1,0 +1,35 @@
+﻿@model List<Asp.NetMVCCrud.Models.Domain.Book>
+
+@{
+}
+
+<h1>Book Lists</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Category</th>
+            <th>Author</th>
+            <th>Book Description</th>
+            <th>Date Borrowed</th>
+            <th>Has been Returned</th>
+            <th> </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var book in Model)
+        {
+            <tr>
+                <td>@book.Id</td>
+                <td>@book.Title</td>
+                <td>@book.Category</td>
+                <td>@book.Author</td>
+                <td>@book.Description</td>
+                <td>@book.DateBorrowed.ToString("dd-MM-yyy")</td>
+                <td>@book.Status</td>
+                <td><a href="Book/View/@book.Id">View Details</a></td>
+            </tr>
+        }
+    </tbody>
+</table>

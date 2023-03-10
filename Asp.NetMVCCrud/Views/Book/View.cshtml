@@ -1,0 +1,37 @@
+﻿@model Asp.NetMVCCrud.Models.UpdateBookVM
+
+
+<h2>Update Book</h2>
+<form method="post" action="View" class="col-7">
+    <div class="mb-5">
+        <label for="" class="form-label">Id</label>
+        <input type="text" class="form-control" asp-for="Id" readonly>
+    </div>
+    <div class="mb-5">
+        <label for="" class="form-label">Book Title</label>
+        <input type="text" class="form-control" asp-for="Title">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Book Category</label>
+        <input type="text" class="form-control" asp-for="Category">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Book Author</label>
+        <input type="text" class="form-control" asp-for="Author">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Book Description</label>
+        <input type="text-area" class="form-control" asp-for="Description">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Date Book Was Borrowed</label>
+        <input type="date" class="form-control" asp-for="DateBorrowed">
+    </div>
+    <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" asp-for="Status">
+        <label class="form-check-label" for="exampleCheck1">Status</label>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" class="btn btn-danger" asp-action="Delete">Delete</button>
+</form>
