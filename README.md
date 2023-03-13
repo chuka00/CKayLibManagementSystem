@@ -1,5 +1,5 @@
 # CKayLibManagementSystem 
-This is a Library Management System built with ASP.Net Core MVC and EFcore. It allows users to manage books, authors, and library members.
+This is a Library Management System built with ASP.Net Core MVC and EFcore. For now, it allows the user to manage books in the library.
 
 ## Installation
 1. Clone the repository
@@ -19,7 +19,7 @@ Some actions are:
 - Delete a book
 
 ## Contributing
-If you find a bug or have a feature request, please open an issue on GitHub. Pull requests are also welcome.
+Please note that this is still a work in progress and if you find a bug or have a feature request, please open an issue on GitHub. Pull requests are also welcome.
 
 ## License
 This project is licensed under the MIT License.
